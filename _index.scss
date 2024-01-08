@@ -1,0 +1,382 @@
+.top {
+    background-image: url(imgg/headerFon.jpg);
+    height: 748px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid white;
+        padding: 16px 0;
+
+        &__logo {
+            color: #FFF;
+            font-size: 36px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.5s color ease;
+
+            &:hover {
+                color: #d4d4d4;
+            }
+
+        }
+
+        &__input {
+            width: 288px - 64px;
+            height: 41px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0);
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 32px;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        &__nav {
+            display: flex;
+            gap: 32px;
+
+            &_link {
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__mobile {
+            display: none;
+        }
+    }
+
+    &__titles {
+        padding-top: 32px;
+        width: 750px;
+
+        &_up {
+            color: #FFF;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 70px;
+            padding-top: 30px;
+        }
+
+        &_mid {
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            padding: 16px 0;
+        }
+
+        &_down {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: #ececec;
+            }
+        }
+    }
+}
+
+main {
+    .for {
+        padding-top: 20px;
+
+        .for__title {
+            font-size: 48px;
+            font-weight: 600;
+            padding-top: 44px;
+            padding-bottom: 32px;
+        }
+
+        .for__content {
+            display: grid;
+            grid-gap: 32px;
+            grid-template-columns: repeat(12, 1fr);
+
+            .for__item {
+                height: 415px;
+                grid-column: span 4;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .for__item_text {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 34px;
+                    font-weight: 600;
+                }
+            }
+
+            .for__item_b {
+                /*большие блоки*/
+                grid-column: span 6;
+            }
+
+            .for__item_1 {
+                /*бокс1*/
+                background-image: url(imgg/pic1.png);
+            }
+
+            .for__item_2 {
+                /*бокс2*/
+                background-image: url(imgg/pic2.png);
+            }
+
+            .for__item_3 {
+                /*бокс3*/
+                background-image: url(imgg/pic3.png);
+            }
+
+            .for__item_4 {
+                /*бокс4*/
+                background-image: url(imgg/pic4.png);
+            }
+
+            .for__item_5 {
+                /*бокс5*/
+                background-image: url(imgg/pic5.png);
+            }
+        }
+    }
+
+    .product-box {
+        &__tittle {
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        .product-content {
+            padding-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+
+            .product {
+                width: 378px;
+                position: relative;
+                border-radius: 5px;
+                transition: 1s box-shadow ease;
+
+                &:hover {
+                    box-shadow: 0 0 10px rgb(192, 192, 192);
+                }
+
+                &__img {
+
+                    &_s {
+                        display: none;
+                        position: absolute;
+
+                        &-1 {
+                            top: 7px;
+                            left: 345px;
+                            width: 31px;
+                            height: 31px;
+                        }
+
+                        &-2 {
+                            top: 10px;
+                            left: 300px;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+
+                }
+
+                &:hover {
+                    .product__img_s {
+                        display: block;
+                    }
+
+                }
+
+                &__title {
+                    padding-top: 10px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                &__text {
+                    padding-top: 9px;
+                    color: #888;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+
+                .product-money {
+                    padding-top: 12px;
+                    display: flex;
+                    gap: 32px;
+
+                    &__element {
+                        font-size: 24px;
+                        font-weight: 500;
+
+                        &_line {
+                            color: #888;
+                            text-decoration-line: line-through;
+                        }
+
+                        &_gap {
+                            padding-top: 13px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .product-box_gap {
+        padding-top: 64px;
+    }
+
+    .link-box {
+        padding-bottom: 64px;
+        padding-top: 32px;
+
+        &__link {
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration-line: underline;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: #888888;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F7F6F6;
+    padding-top: 20px;
+    padding-bottom: 34px;
+
+    &__logo {
+        height: 130px;
+
+        &_text {
+            color: #000;
+            font-size: 36px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.5s color ease;
+
+            &:hover {
+                color: #888888;
+            }
+        }
+    }
+
+    &__item {
+        width: 125px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        &_text {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &_link {
+            color: #888;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &_icons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .footer__icons_link_black {
+                transition: .3s ease fill;
+
+                &:hover {
+                    fill: #000;
+                }
+            }
+        }
+    }
+
+    &__form {
+        width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        &_text {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &_input {
+            width: 260px - 17px * 2;
+            height: 40px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 0 17px;
+            border: none;
+            box-shadow: 0 0 0 0.5px #888888;
+        }
+
+        &_input:focus {
+            outline: none;
+            box-shadow: 0 0 2px 0.5px #888888;
+        }
+
+        &_button {
+            width: 260px;
+            height: 40px;
+            background-color: rgba(222, 215, 215, 0.41);
+            border-radius: 15px;
+            border: none;
+            color: #000;
+            font-size: 12px;
+            font-weight: 400;
+            transition: background-color 0.5s ease, color 0.5s ease;
+
+            &:hover {
+                background-color: #000000;
+                color: #F7F6F6;
+            }
+        }
+    }
+}

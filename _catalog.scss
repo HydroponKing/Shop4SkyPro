@@ -1,0 +1,51 @@
+.top_catalog {
+    background-image: url(imgg/head_cat.jpg);
+    height: 400px;
+
+    .top__titles {
+        .top__titles_up {
+            padding-top: 95px;
+        }
+    }
+}
+
+main {
+    .control-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 64px;
+
+        .control-panel__link {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            .control-panel__link_style{
+                color: black;
+                transition: color 0.5s ease ;
+                &:hover{
+                    color: #888888;
+                }
+            }
+        }
+
+        .control-panel__select {
+            border-radius: 20px;
+            border: 1px solid #c4c4c4;
+            height: 41px;
+            appearance: none;
+            /* Убираю стандартную стрелку*/
+            background: url("imgg/cat_tap.png") no-repeat right 12px center;
+            /*добавляю свою картинку и двигаем ее жоско*/
+            background-size: 20px 11px;
+            /*размер картинки стрелки*/
+            font-size: 16px;
+            font-weight: 400;
+            padding-left: 14px;
+            transition: box-shadow 0.5s ease;
+            &:hover{
+                box-shadow: 0 0 10px #888888;
+            }
+        }
+    }
+}

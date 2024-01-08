@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  main .for .for__content .for__item {
+    height: 265px;
+  }
+  main .for .for__content .for__item_b {
+    height: 268px;
+  }
+  main .product-box .product-content {
+    gap: 29px;
+  }
+  main .product-box .product-content .product_img .product_img_s-1 {
+    display: none;
+  }
+  .footer__logo {
+    display: none;
+  }
+}/*# sourceMappingURL=_tablet.css.map */

@@ -1,0 +1,36 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+
+    main {
+        .for {
+            .for__content {
+
+                .for__item {
+                    height: 265px;
+                }
+
+                .for__item_b {
+                    height: 268px;
+                }
+
+            }
+        }
+
+        .product-box {
+            .product-content {
+                gap: 29px;
+            }
+        }
+    }
+
+
+
+    .footer {
+        &__logo {
+            display: none;
+        }
+    }
+}
